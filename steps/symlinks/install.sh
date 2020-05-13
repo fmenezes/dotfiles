@@ -3,8 +3,8 @@
 source ./script/common.sh
 
 pushd .
-cd ./steps/files
-for file in *.symlink; do
+cd ./symlink.d
+for file in *.sh; do
     src="$PWD/$file"
     dest="$HOME/.${file%.*}"
     bkp="$dest.bak"

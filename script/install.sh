@@ -5,7 +5,7 @@ source ./script/common.sh
 declare -a steps=(
   'brew'
   'zsh'
-  'files'
+  'symlinks'
   'iterm'
   'apps'
 )
