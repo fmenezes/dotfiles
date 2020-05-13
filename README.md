@@ -1,6 +1,6 @@
 # dotfiles
 
-My personal dotfiles, aimed at macOS.
+My personal dotfiles, only works with macOS.
 
 ## Installation
 

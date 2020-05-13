@@ -1,5 +1,10 @@
 #!/bin/zsh
 
+if [[ ! "$OSTYPE" == "darwin"* ]]; then
+  echo 'Sorry only macOS is supported'
+  exit 1
+fi
+
 echo 'Installing Xcode Command Line Tools...'
 xcode-select -p > /dev/null
 ret=$?
