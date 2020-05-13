@@ -103,3 +103,9 @@ if [ -d $HOME/.dotfiles/rc.d ]; then
         source $file
     done
 fi
+
+if [ -d $HOME/.localrc.d ]; then
+    for file in $HOME/.localrc.d/*.sh; do
+        source $file
+    done
+fi
