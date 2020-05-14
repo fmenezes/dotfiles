@@ -11,6 +11,7 @@ declare -a steps=(
   'brew'
   'zsh'
   'symlinks'
+  'nvm'
   'iterm'
   'apps'
 )
