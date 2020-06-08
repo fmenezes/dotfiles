@@ -4,13 +4,13 @@ source ./script/common.sh
 
 pushd .
 cd ./symlink.d
-for file in *.sh; do
+for file in *; do
     src="$PWD/$file"
-    dest="$HOME/.${file%.*}"
+    dest="$HOME/.${file}"
     bkp="$dest.bak"
-    echo "Symlinking .${file%.*} ..."
+    echo "Symlinking .${file} ..."
     if [[ -L $dest ]]; then
-        echo "Symlink for .${file%.*} already exists, skipping"
+        echo "Symlink for .${file} already exists, skipping"
         continue
     else
         if [[ -f $dest ]]; then
