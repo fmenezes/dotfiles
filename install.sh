@@ -16,7 +16,7 @@ else
 fi
 
 echo 'Cloning dotfiles...'
-git clone git@github.com:fmenezes/dotfiles ~/.dotfiles
+git clone https://github.com/fmenezes/dotfiles.git ~/.dotfiles
 
 cd ~/.dotfiles
 ./script/install.sh
