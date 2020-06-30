@@ -34,5 +34,5 @@ declare -a steps=(
   'apps'
 )
 for step in "${steps[@]}"; do
-  eval "./steps/$step/install.sh"
+  eval "./steps/$step/bootstrap.sh"
 done
