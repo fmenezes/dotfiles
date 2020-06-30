@@ -7,6 +7,9 @@ declare -a cask_apps=(
   'google-chrome'
   'skype'
   'visual-studio-code'
+  'enpass'
+  'slack'
+  'spotify'
 )
 for app in "${cask_apps[@]}"; do
   install_cask_app $app

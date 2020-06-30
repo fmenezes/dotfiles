@@ -8,6 +8,7 @@ if [[ ! "$OSTYPE" == "darwin"* ]]; then
 fi
 
 declare -a steps=(
+  'macos'
   'brew'
   'zsh'
   'symlinks'
