@@ -16,12 +16,15 @@ else
 fi
 
 echo 'Cloning dotfiles...'
-if [ ! -d "/path/to/dir" ]; then
+if [ ! -d ~/.dotfiles ]; then
   git clone https://github.com/fmenezes/dotfiles.git ~/.dotfiles
+  cd ~/.dotfiles
 else
-  echo 'Already cloned, nothing else to do'
+  echo 'Already cloned, updating...'
+  cd ~/.dotfiles
+  git pull
 fi
-cd ~/.dotfiles
+
 
 source ./script/common.sh
 
