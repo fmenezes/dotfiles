@@ -16,7 +16,23 @@ else
 fi
 
 echo 'Cloning dotfiles...'
-git clone https://github.com/fmenezes/dotfiles.git ~/.dotfiles
-
+if [ ! -d "/path/to/dir" ]; then
+  git clone https://github.com/fmenezes/dotfiles.git ~/.dotfiles
+else
+  echo 'Already cloned, nothing else to do'
+fi
 cd ~/.dotfiles
-./script/install.sh
+
+source ./script/common.sh
+
+declare -a steps=(
+  'brew'
+  'zsh'
+  'symlinks'
+  'nvm'
+  'iterm'
+  'apps'
+)
+for step in "${steps[@]}"; do
+  eval "./steps/$step/install.sh"
+done
