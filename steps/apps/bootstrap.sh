@@ -10,6 +10,8 @@ declare -a cask_apps=(
   'enpass'
   'slack'
   'spotify'
+  'postman'
+  'zoomus'
 )
 for app in "${cask_apps[@]}"; do
   install_cask_app $app
