@@ -9,6 +9,7 @@ declare -a apps=(
   'go'
   'rbenv'
   'rbenv-default-gems'
+  'ffmpeg'
 )
 for app in "${apps[@]}"; do
   install_brew_app $app
