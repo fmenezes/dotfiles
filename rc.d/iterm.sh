@@ -1,1 +1,1 @@
-echo -e "\033]50;SetProfile=iterm\a"
+iterm2_profile 'iterm'

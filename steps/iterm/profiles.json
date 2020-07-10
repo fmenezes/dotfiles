@@ -5,6 +5,13 @@
       "Name" : "iterm",
       "Option Key Sends" : 0,
       "Right Option Key Sends" : 0,
+      "Background Color" : {
+        "Red Component" : 0.071075439453125,
+        "Color Space" : "sRGB",
+        "Blue Component" : 0.14129638671875,
+        "Alpha Component" : 1,
+        "Green Component" : 0.1201324462890625
+      },
       "Keyboard Map" : {
         "0xf728-0x80000" : {
           "Action" : 10,

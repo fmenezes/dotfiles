@@ -68,7 +68,7 @@ ZSH_THEME="kafeitu"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages nvm docker)
+plugins=(git colored-man-pages nvm docker golang iterm2)
 
 source $ZSH/oh-my-zsh.sh
 
