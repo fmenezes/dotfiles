@@ -4,3 +4,5 @@
 	branch = false
 	diff = false
 
+[core]
+	excludesfile = ~/.gitignore
