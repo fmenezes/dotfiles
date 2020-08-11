@@ -9,6 +9,7 @@ declare -a apps=(
   'go'
   'rbenv'
   'rbenv-default-gems'
+  'openssl@1.1'
   'ffmpeg'
 )
 for app in "${apps[@]}"; do
