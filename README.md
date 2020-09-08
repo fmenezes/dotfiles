@@ -1,6 +1,15 @@
 # dotfiles
 
-My personal dotfiles, only works with macOS.
+My personal dotfiles.
+
+## Support
+
+| OS | Support |
+| --- | --- |
+| macOS | :white_check_mark: |
+| Linux | :x: |
+| Windows | :x: |
+
 
 ## Installation
 
