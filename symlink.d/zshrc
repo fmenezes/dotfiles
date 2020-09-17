@@ -1,3 +1,11 @@
+export DOTFILES=$HOME/.dotfiles
+
+if [ -d $DOTFILES/boot.d ]; then
+    for file in $DOTFILES/boot.d/*.sh; do
+        source $file
+    done
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -98,8 +106,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -d $HOME/.dotfiles/rc.d ]; then
-    for file in $HOME/.dotfiles/rc.d/*.sh; do
+if [ -d $DOTFILES/rc.d ]; then
+    for file in $DOTFILES/rc.d/*.sh; do
         source $file
     done
 fi
