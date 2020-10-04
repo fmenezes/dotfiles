@@ -10,3 +10,6 @@ function uuid {
   python -c 'import sys,uuid; sys.stdout.write(str(uuid.uuid4()))'
 }
 
+function compress-pdf {
+  gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4  -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=- $1
+}

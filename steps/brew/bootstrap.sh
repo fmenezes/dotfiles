@@ -11,6 +11,7 @@ declare -a apps=(
   'rbenv-default-gems'
   'openssl@1.1'
   'ffmpeg'
+  'ghostscript'
 )
 for app in "${apps[@]}"; do
   install_brew_app $app
