@@ -7,7 +7,7 @@ function darkmode {
 }
 
 function uuid {
-  python -c 'import sys,uuid; sys.stdout.write(str(uuid.uuid4()))'
+  uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'
 }
 
 function compress-pdf {
