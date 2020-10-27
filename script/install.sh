@@ -34,6 +34,7 @@ declare -a steps=(
   'symlinks'
   'nvm'
   'fonts'
+  'cobalt2'
   'iterm'
   'apps'
 )
