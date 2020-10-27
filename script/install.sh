@@ -35,6 +35,7 @@ declare -a steps=(
   'nvm'
   'fonts'
   'cobalt2'
+  'powerline'
   'iterm'
   'apps'
 )
