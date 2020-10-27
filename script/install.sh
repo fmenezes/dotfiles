@@ -33,6 +33,7 @@ declare -a steps=(
   'zsh'
   'symlinks'
   'nvm'
+  'fonts'
   'iterm'
   'apps'
 )
