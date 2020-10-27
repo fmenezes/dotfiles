@@ -12,6 +12,7 @@ declare -a apps=(
   'openssl@1.1'
   'ffmpeg'
   'ghostscript'
+  'rmtrash'
 )
 for app in "${apps[@]}"; do
   install_brew_app $app
