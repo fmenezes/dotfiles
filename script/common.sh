@@ -14,7 +14,7 @@ function try_run {
 function install_brew_app {
   for app in "$@"; do
     echo "Installing $app..."
-    try_run "brew list | grep $app > /dev/null" "brew install $app" 'Already installed, nothing else to do'
+    try_run "brew list --formula | grep $app > /dev/null" "brew install $app" 'Already installed, nothing else to do'
   done
 }
 
