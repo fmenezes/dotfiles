@@ -21,6 +21,6 @@ function install_brew_app {
 function install_cask_app {
   for app in "$@"; do
     echo "Installing cask $app..."
-    try_run "brew cask list | grep $app > /dev/null" "brew cask install $app" 'Already installed, nothing else to do'
+    try_run "brew list --cask | grep $app > /dev/null" "brew cask install $app" 'Already installed, nothing else to do'
   done
 }
