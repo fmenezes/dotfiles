@@ -32,7 +32,6 @@ declare -a steps=(
   'brew'
   'zsh'
   'symlinks'
-  'nvm'
   'fonts'
   'cobalt2'
   'powerline'
