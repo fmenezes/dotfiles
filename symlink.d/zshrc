@@ -6,6 +6,10 @@ if [ -d $DOTFILES/boot.d ]; then
     done
 fi
 
+if [ -d $HOME/.bootrc ]; then
+    source $HOME/.bootrc
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -76,7 +80,7 @@ ZSH_THEME="cobalt2"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages docker golang iterm2)
+plugins=(git colored-man-pages docker golang iterm2 ${EXTRA_PLUGINS[@]})
 
 source $ZSH/oh-my-zsh.sh
 
