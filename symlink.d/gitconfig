@@ -3,6 +3,7 @@
 [pager]
 	branch = false
 	diff = false
-
 [core]
 	excludesfile = ~/.gitignore
+[pull]
+	rebase = false
