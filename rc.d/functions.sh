@@ -3,7 +3,7 @@ function man-pdf {
 }
 
 function darkmode {
-  automator ~/.dotfiles/macos/darkmode.workflow 2>&1 1>/dev/null
+  automator $DOTFILES/macos/darkmode.workflow 2>&1 1>/dev/null
 }
 
 function uuid {
