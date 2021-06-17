@@ -8,7 +8,6 @@ try_run 'which brew > /dev/null' 'ruby -e "$(curl -fsSL https://raw.githubuserco
 declare -a apps=(
   'ffmpeg'
   'ghostscript'
-  'rmtrash'
 )
 for app in "${apps[@]}"; do
   install_brew_app $app
