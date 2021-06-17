@@ -12,8 +12,3 @@ declare -a apps=(
 for app in "${apps[@]}"; do
   install_brew_app $app
 done
-
-eval "$(rbenv init -)"
-if [ ! -f $(rbenv root)/default-gems ]; then
-  echo 'bundler' > $(rbenv root)/default-gems
-fi
