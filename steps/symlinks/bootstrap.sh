@@ -2,8 +2,6 @@
 
 source ./script/common.sh
 
-touch ~/.config/.gitconfig
-
 pushd .
 cd ./symlink.d
 for file in *; do
@@ -23,3 +21,7 @@ for file in *; do
     fi
 done
 popd
+
+touch ~/.config/.gitconfig
+
+./steps/symlinks/user.sh
