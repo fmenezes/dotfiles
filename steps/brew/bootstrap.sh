@@ -6,7 +6,6 @@ echo 'Installing Hombrew...'
 try_run 'which brew > /dev/null' 'ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' 'Already installed, nothing else to do'
 
 declare -a apps=(
-  'ffmpeg'
   'ghostscript'
 )
 for app in "${apps[@]}"; do
