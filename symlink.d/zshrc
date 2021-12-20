@@ -20,7 +20,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-if [[ "$TERM_PROGRAM" != "Apple_Terminal" ]]; then # check if mac terminal is not loaded
+if [[ "$TERM_PROGRAM" == "iTerm.app" ]]; then # check if iTerm is loaded
     ZSH_THEME="cobalt2"
 fi
 
