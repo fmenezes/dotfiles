@@ -7,3 +7,5 @@
 	excludesfile = ~/.gitignore
 [pull]
 	rebase = false
+[include]
+	path = ~/.config/.gitconfig
