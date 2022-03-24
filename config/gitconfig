@@ -1,0 +1,13 @@
+[color]
+	ui = true
+[pager]
+	branch = false
+	diff = false
+[core]
+	excludesfile = ~/.gitignore
+[pull]
+	rebase = false
+[http]
+	cookiefile = ~/.gitcookies
+[include]
+	path = ~/.config/.gitconfig
