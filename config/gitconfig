@@ -7,7 +7,5 @@
 	excludesfile = ~/.gitignore
 [pull]
 	rebase = false
-[http]
-	cookiefile = ~/.gitcookies
 [include]
 	path = ~/.config/.gitconfig
