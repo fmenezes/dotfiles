@@ -5,8 +5,6 @@ declare -a steps=(
   'zsh'
   'symlinks'
   'fonts'
-  'cobalt2'
-  'powerline'
   'iterm'
 )
 for step in "${steps[@]}"; do
