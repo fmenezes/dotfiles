@@ -4,8 +4,16 @@ function path_prompt_info() {
   echo "%{$fg[cyan]%}%~%{$reset_color%} "
 }
 
+function cursor_error_prompt_info() {
+  echo "%{$fg_bold[red]%}%? ✗%{$reset_color%} "
+}
+
+function cursor_clean_prompt_info() {
+  echo "$ "
+}
+
 function cursor_prompt_info() {
-  echo "%(?::%{$fg_bold[red]%}%?%{$reset_color%} )$ "
+  echo "%(?:$(cursor_clean_prompt_info):$(cursor_error_prompt_info))"
 }
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}[%{$fg[green]%}"
