@@ -6,7 +6,7 @@ pushd .
 cd ./symlink.d
 for file in *; do
     src="$PWD/$file"
-    dest="$HOME/${file}"
+    dest="$HOME/.${file}"
     bkp="$dest.bak"
     echo "Symlinking ${file} ..."
     if [[ -L $dest ]]; then
