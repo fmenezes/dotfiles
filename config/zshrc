@@ -1,11 +1,5 @@
 export DOTFILES=$HOME/.dotfiles
 
-if [ -d $DOTFILES/boot.d ]; then
-    for file in $DOTFILES/boot.d/*.sh; do
-        source $file
-    done
-fi
-
 if [ -d $HOME/.bootrc ]; then
     source $HOME/.bootrc
 fi
