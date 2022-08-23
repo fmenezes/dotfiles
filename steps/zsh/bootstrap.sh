@@ -8,4 +8,4 @@ if [[ ! $SHELL == *"/zsh" ]]; then
 fi
 
 echo 'Installing Oh My Zsh'
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+try_run 'which omz > /dev/null' 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended' 'Already installed, nothing else to do'
