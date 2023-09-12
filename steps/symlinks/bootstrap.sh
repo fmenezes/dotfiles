@@ -22,6 +22,4 @@ for file in *; do
 done
 popd
 
-touch ~/.config/.gitconfig
-
 ./steps/symlinks/user.sh

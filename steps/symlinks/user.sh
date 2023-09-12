@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+mkdir -p ~/.config && touch ~/.config/.gitconfig
+
 if [[ "$(git config -f ~/.config/.gitconfig --get user.name)" == "" ]]; then
     echo -n "Input git user.name: "
     read gitname
