@@ -1,13 +1,11 @@
 #!/bin/zsh
+set -e
 
 source ./script/common.sh
 
 echo 'Installing Hombrew...'
 
-which brew > /dev/null
-EXIT_CODE=$?
-
-if [[ "$EXIT_CODE" == "0" ]]; then
+if which brew > /dev/null 2>&1; then
     echo 'Already installed, nothing else to do'
 else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

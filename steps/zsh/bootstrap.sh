@@ -1,4 +1,5 @@
 #!/bin/zsh
+set -e
 
 source ./script/common.sh
 

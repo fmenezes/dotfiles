@@ -1,4 +1,5 @@
 #!/bin/zsh
+set -e
 
 mkdir -p ~/.config && touch ~/.config/.gitconfig
 
