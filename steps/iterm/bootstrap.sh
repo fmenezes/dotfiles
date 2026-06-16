@@ -3,6 +3,8 @@ set -e
 
 source ./script/common.sh
 
+brew install --cask iterm2
+
 echo 'Installing iTerm Profiles...'
 if [[ -L ~/Library/Application\ Support/iTerm2/DynamicProfiles/iterm_profiles.json ]]; then
   echo 'Already installed, nothing else to do'

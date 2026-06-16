@@ -17,9 +17,21 @@ else
     eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 fi
 
-pushd .
+brew tap fmenezes/tap
+brew trust fmenezes/tap
 
-cd $DOTFILES
-brew bundle
+brew install ghostscript
+brew install gh
+brew install mas
 
-popd
+brew install --cask appcleaner
+brew install --cask google-chrome
+brew install --cask visual-studio-code
+brew install --cask slack
+brew install --cask spotify
+brew install --cask docker
+brew install --cask zoom
+brew install --cask bitwarden
+brew install --cask xbar
+
+mas install 425424353  # The Unarchiver
