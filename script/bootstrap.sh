@@ -7,6 +7,7 @@ declare -a steps=(
   'symlinks'
   'fonts'
   'iterm'
+  'apps'
 )
 for step in "${steps[@]}"; do
   eval "./steps/$step/bootstrap.sh"
