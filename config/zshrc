@@ -67,7 +67,7 @@ ZSH_THEME="fmenezes"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
+# ZSH_CUSTOM=$ZSH/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -106,16 +106,6 @@ source $ZSH/oh-my-zsh.sh
 
 if [ -d $DOTFILES/rc.d ]; then
     for file in $DOTFILES/rc.d/*.sh; do
-        source $file
-    done
-fi
-
-if [ -f $HOME/.localrc ]; then
-    source $HOME/.localrc
-fi
-
-if [ -d $HOME/.localrc.d ]; then
-    for file in $HOME/.localrc.d/*.sh; do
         source $file
     done
 fi
