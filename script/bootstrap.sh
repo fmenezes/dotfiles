@@ -5,7 +5,6 @@ declare -a steps=(
   'brew'
   'zsh'
   'symlinks'
-  'fonts'
   'iterm'
   'apps'
 )

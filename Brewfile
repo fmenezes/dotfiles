@@ -2,6 +2,7 @@ tap "fmenezes/tap", trusted: true
 brew "gh"
 brew "ghostscript"
 brew "mas"
+brew "font-inconsolata"
 cask "appcleaner"
 cask "docker-desktop"
 cask "google-chrome"
