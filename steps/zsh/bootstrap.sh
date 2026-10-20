@@ -13,3 +13,6 @@ try_run '[[ -d ~/.oh-my-zsh ]]' 'ZSH= sh -c "$(curl -fsSL https://raw.githubuser
 
 # Source OMZ to make omz command available without shell restart
 source ~/.oh-my-zsh/oh-my-zsh.sh
+
+# Install external plugin and theme
+./steps/zsh/external.sh
